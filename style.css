@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body{
+  background: url("https://w.wallhaven.cc/full/4o/wallhaven-4oe1ol.jpg") center/cover no-repeat fixed;
+  color: white;   
+height: 2000px;
+}
+/* HEADER  */
+
+.header__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: .5s;
+
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+   
+}
+@keyframes anim1{
+    0%{
+        position: relative;
+        left:0;
+        top: -200px;
+    }
+    100%{
+        position: relative;
+        left: 0;
+        top: 0;
+
+    }
+}
+
+.header__lists{
+    
+}
+.header__logo {
+    font-size: 3.5rem;
+    text-decoration: none;
+    
+    transition: .5s;
+    color: white;
+    padding-left: 20px;
+    
+    
+    
+}
+.header__logo:hover{
+    text-shadow: 1px 1px 5px yellow;
+    transition: .5s;
+    color: yellow;
+}
+.header__lists a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 0px 20px;
+    transition: .5s;
+    display: inline-block;
+    color: white;
+}
+.header__lists a:hover{
+    transform: scale(1.2) rotate(-10deg);
+    transition: .5s;
+    color: yellow;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px yellow;
+}
+.header__lists a:active{
+    color: yellow;
+    transition: .5s;
+}
+@media (max-width: 477px) {
+    .header__lists{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 721px) {
+    .header__items{
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 721px){
+    .header__lists{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 721px){
+    .header__lists a:last-child{
+        margin-top: 10px;
+    }
+}
+.all__container{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+/* MAIN */
+
+
+main{
+    margin-top: 100px;
+}
+.main__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    transition: .5s;
+
+    
+}
+
+
+
+
+.main__title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes anim2{
+    0%{
+       position: relative;
+       top: 0;
+       left: -1300px;
+        
+    }
+    100%{
+       position: relative;
+       top: 0;
+       left: 0px;
+    }
+}
+
+.main__subtitle{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+    animation-name: anim3;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+
+}
+
+@keyframes anim3{
+    0%{
+       position: relative;
+       top: 0;
+       right: 1000px;
+      
+       
+        
+    }
+    100%{
+       position: relative;
+       top: 0;
+       right: 0px;
+    }
+}
+.main__text{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    line-height: 30px;
+
+    animation-name: anim4;
+    animation-duration: 2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes anim4{
+    0%{
+       position: relative;
+       bottom: -1500px;
+       right: 0px;
+       
+       
+        
+    }
+    100%{
+       position: relative;
+       bottom: 0;
+       right: 0px;
+    }
+}
